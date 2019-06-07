@@ -55,7 +55,7 @@ app.get("/",(req,res) => {
 // });
 
 // mongoose.connect(config.mongoPath, err => {
-  mongoose.connect(`mongodb+srv://ShinyKid:Namduc0107@cluster0-hasrf.mongodb.net/tk_hotgirls?retryWrites=true&w=majority`, err => {
+  mongoose.connect(`mongodb+srv://ShinyKid:Namduc0107@cluster0-hasrf.mongodb.net/tk-hotgirls?retryWrites=true&w=majority`, err => {
   if (err) console.error(err);
   else console.log("Database connect successful");
 });
