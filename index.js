@@ -60,7 +60,7 @@ app.get("/",(req,res) => {
   else console.log("Database connect successful");
 });
 
-const port = process.env.port || 6969;
+const port = process.env.PORT || 6969;
 
 app.listen(port, err => {
   if (err) console.log(err);
