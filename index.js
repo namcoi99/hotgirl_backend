@@ -44,11 +44,15 @@ app.use("/api/auth", authRouter);
 app.use("/api/images", imageRouter);
 app.use("/api/users", userRouter);
 
-app.use(express.static('./public'));
+app.get("/",(req,res) =>{
+  res.status(404).send("404 NOT FOUND");
+})
 
-app.get('/',(req,res) => {
-  res.sendFile('./public/index.html');
-});
+// app.use(express.static('./public'));
+
+// app.get('/',(req,res) => {
+//   res.sendFile('./public/index.html');
+// });
 
 // mongoose.connect(config.mongoPath, err => {
   mongoose.connect(`mongodb+srv://ShinyKid:Namduc0107@cluster0-hasrf.mongodb.net/test?retryWrites=true&w=majority`, err => {
