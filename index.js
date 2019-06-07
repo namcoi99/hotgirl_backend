@@ -50,7 +50,8 @@ app.get('/',(req,res) => {
   res.sendFile('./public/index.html');
 });
 
-mongoose.connect(config.mongoPath, err => {
+// mongoose.connect(config.mongoPath, err => {
+  mongoose.connect(`mongodb+srv://ShinyKid:Namduc0107@cluster0-hasrf.mongodb.net/test?retryWrites=true&w=majority`, err => {
   if (err) console.error(err);
   else console.log("Database connect successful");
 });
