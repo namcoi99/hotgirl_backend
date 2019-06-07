@@ -44,7 +44,7 @@ app.use("/api/auth", authRouter);
 app.use("/api/images", imageRouter);
 app.use("/api/users", userRouter);
 
-app.get("/",(req,res) =>{
+app.get("/",(req,res) => {
   res.status(404).send("404 NOT FOUND");
 })
 
@@ -55,7 +55,7 @@ app.get("/",(req,res) =>{
 // });
 
 // mongoose.connect(config.mongoPath, err => {
-  mongoose.connect(`mongodb+srv://ShinyKid:Namduc0107@cluster0-hasrf.mongodb.net/test?retryWrites=true&w=majority`, err => {
+  mongoose.connect(`mongodb+srv://ShinyKid:Namduc0107@cluster0-hasrf.mongodb.net/tk_hotgirls?retryWrites=true&w=majority`, err => {
   if (err) console.error(err);
   else console.log("Database connect successful");
 });
